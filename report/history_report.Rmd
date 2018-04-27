@@ -1,0 +1,35 @@
+---
+title: "History"
+author: "Christina Koch"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r history_data, inclue=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+library(knitr)
+date <- '2016_11_23'
+filename <- paste0('/Users/ckoch/Code/history_analysis/',date,'.csv')
+history_data <- read.table(file = filename, header = FALSE, sep = ",")
+```
+
+```{r history_plot}
+history_plot <- history_data %>% 
+  group_by(V1) %>%
+  summarize(total_uses = n()) %>% 
+  mutate(V1 = reorder(V1, total_uses)) %>% 
+  ggplot(aes(x = total_uses, y = V1)) + 
+  geom_point() + 
+  labs(x="Frequency", y="Command", title="Command Usage on submit-3")
+
+history_plot
+```
+
+```{r history_list}
+levels(history_data$V1) %>% kable()
+```

@@ -1,0 +1,1000 @@
+   15  cp hello.sh hello2.sh
+   16  nano hello2.sh 
+   17  nano template.submit 
+   18  condor_submit template.submit 
+   19  condor_q
+   20  sudo -i
+   21  ssh ckoch5@transfer00.chtc.wisc.edu
+   22  ls
+   23  less out 
+   24  condor_q
+   25  less hello2.sh 
+   26  condor_q -nobatch
+   27  ls
+   28  ls -lh
+   29  less out2 
+   30  less out
+   31  rm out out2 
+   32  nano hello.sh 
+   33  cd
+   34  ls
+   35  cd tests/scheduled_chirp/
+   36  ls
+   37  less 109633573_0.out 
+   38  nano template.submit 
+   39  nano hello.sh 
+   40  nano hello2.sh 
+   41  condor_submit template.submit 
+   42  nano template.submit 
+   43  condor_submit template.submit 
+   44  condor_q
+   45  exit
+   46  ls
+   47  cd high_mem_tracking/
+   48  ls
+   49  condor_q
+   50  less cron.users.submit 
+   51  cd ..
+   52  ls
+   53  cd users/lumerical/
+   54  ls
+   55  cd
+   56  ls
+   57  ls -lrt tests/
+   58  ls -lrt users/
+   59  cd users/lumerical/
+   60  ls
+   61  condor_submit submit-lumerical.sub 
+   62  ls
+   63  ls -lrt
+   64  less job_109657654.err
+   65  less job_109657654.out 
+   66  sudo -i
+   67  ls
+   68  nano run-lumerical.sh 
+   69  ls
+   70  mkdir old_results
+   71  mv job_109* old_results/
+   72  ls
+   73  rm Degrees0.1Mirrored_p0.log 
+   74  ls
+   75  nano submit-lumerical.sub 
+   76  nano run-lumerical.sh 
+   77  grep 4 Degrees0.1Mirrored.fsp 
+   78  condor_submit submit-lumerical.sub 
+   79  cd ..
+   80  cd tests/
+   81  ls
+   82  cd scheduled_chirp/
+   83  ls
+   84  less hello2.sh 
+   85  cd
+   86  ls
+   87  docker images
+   88  cd users/lumerical/
+   89  ls
+   90  ls -lrt
+   91  less job_109658243.err 
+   92  less job_109658243.out 
+   93  less Degrees0.1Mirrored_p0.log 
+   94  rm Degrees0.1Mirrored_p0.log 
+   95  mv job_109658243.* old_results/
+   96  ls
+   97  nano run-lumerical.sh 
+   98  condor_submit submit-lumerical.sub 
+   99  condor_q
+  100  cd ../../tests/
+  101  mkdir singularity
+  102  cd singularity/
+  103  ls
+  104  cp ~/submit/template.submit .
+  105  nano hello.sh
+  106  nano wrapper.py
+  107  nano hello.sh 
+  108  nano template.submit 
+  109  nano hello.sh 
+  110  nano template.submit 
+  111  mkdir logs
+  112  ls
+  113  nano template.submit 
+  114  nano hello.sh 
+  115  chmod 770 wrapper.py hello.sh 
+  116  ls
+  117  nano wrapper.py 
+  118  nano hello.sh 
+  119  condor_q
+  120  condor_q -nobatch
+  121  nano hello.sh 
+  122  nano template.submit 
+  123  condor_submit template.submit 
+  124  condor_q
+  125  condor_q -bet 109658767.0
+  126  condor_q
+  127  condor_q -all
+  128  sethomequota nu_ibon 80 90
+  129  condor_q
+  130  condor_q -nobatch
+  131  cd ../../users/lumerical/
+  132  ls
+  133  ls -lrt
+  134  less Degrees0.1Mirrored_p0.log 
+  135  cd ..
+  136  cd ../tests/
+  137  ls
+  138  cd singularity/
+  139  ls
+  140  cd logs/
+  141  ls
+  142  less 109659382_0.log 
+  143  less /home/ckoch5/users/lumerical/run-lumerical.sh 
+  144  cd ..
+  145  condor_q
+  146  condor_q -bet 109659382.0
+  147  condor_q
+  148  sudo mkdir /squid/corak
+  149  sudo chown -R corak:corak /squid/corak
+  150  sudo -i
+  151  ls -lh /squid/czhang72
+  152  ls -lh /squid/czhang72/oldpdfs/
+  153  high_mem_jobs 
+  154  condor_status -constraint 'TotalDisk >= 10737418240 && TotalMemory > 123000'
+  155  which sethomequota
+  156  clear
+  157  high_mem_jobs 
+  158  condor_status -constraint 'TotalDisk >= 10737418240 && TotalMemory > 123000'
+  159  condor_status -compact -constraint 'TotalDisk >= 10737418240 && TotalMemory > 123000'
+  160  condor_status e564
+  161  cd tests/singularity/
+  162  ls
+  163  less 109659382_0.out 
+  164  less 109659382_0.err 
+  165  less wrapper.py 
+  166  less 109659382_0.out 
+  167  less hello.sh 
+  168  gpu_nodes 
+  169  gpu_nodes TotalMemory
+  170  condor_status gzk-1 -af Has_singularity
+  171  high_mem_jobs 
+  172  status_mem mem1
+  173  sudo quota -s nu_ibon
+  174  sethomequota nu_ibon 100 110
+  175  high_mem_jobs 
+  176  condor_status e584
+  177  condor_status e564
+  178  cd
+  179  clear
+  180  cd high_mem_tracking/
+  181  ls
+  182  nano cron.users.submit 
+  183  condor_q
+  184  clear
+  185  ls
+  186  ls /squid/meagan/
+  187  ls -lh /squid/meagan/
+  188  cd /squid/meagan/
+  189  ls
+  190  rm *.wmv
+  191  sudo rm *.wmv
+  192  ls
+  193  cd ..
+  194  sudo rmdir meagan/
+  195  cd czhang72
+  196  ls
+  197  ls -lh
+  198  cd
+  199  clear
+  200  sudo quota -s nu_pankaj
+  201  ls /squid/bhimsaria
+  202  ls -lh /squid/bhimsaria
+  203  ls -lh /squid/bhimsaria/NR/
+  204  ls -lh /squid/bhimsaria
+  205  cd /squid/bhimsaria/PBMDebruijn
+  206  ls -lh ./
+  207  cd ..
+  208  cd
+  209  clear
+  210  ls /squid/bhimsaria
+  211  ls -lh /squid/bhimsaria
+  212  ls /squid/czhang72/
+  213  ls /squid/nu_shenx3
+  214  ls -lh /squid/nu_shenx3
+  215  sudo du -sh /squid/bhimsaria/
+  216  sudo du -sh /squid/czhang72/
+  217  ls /squid/osgimages/
+  218  ls -lh /squid/osgimages/
+  219  ls /squid/WidBiologyVetsigian/
+  220  ls -lh /squid/WidBiologyVetsigian/
+  221  ls /squid/nu_shenx3/
+  222  ls -lh /squid/nu_shenx3/
+  223  ls /squid/WidBiologyVetsigian/
+  224  ls /squid/eswright/
+  225  ls -lh /squid/WidBiologyVetsigian/
+  226  ls /squid/osgimages/
+  227  ls -lh /squid/osgimages/
+  228  ls -lh /squid/linares2
+  229  ls -lh /squid/linares2/MRB_test/
+  230  ls -lh /squid/linares2/MRB_Scenarios/
+  231  ls -lh /squid/linares2/MRB_Scenarios/HF
+  232  ls -lh /squid/linares2/MRB_Scenarios/HF_test/
+  233  ls -lh /squid/linares2/MRB_Scenarios/Medium_Flow/
+  234  ls -lh /squid/linares2/MRB_Scenarios/Strong_HFWLOs
+  235  ls /squid/hebbring_group/
+  236  ls /squid/hebbring_group/GP_imputation/
+  237  ls /squid/hebbring_group/GP_imputation/chr1
+  238  ls /squid/hebbring_group/GP_imputation/chr7/
+  239  clear
+  240  ls /squid/nu_shenx3/
+  241  ls -lh /squid/nu_shenx3/
+  242  condor_q 106559471
+  243  condor_q 106559471 -af holdreason
+  244  sudo ls /home/buczkowski/
+  245  nano .bashrc 
+  246  source .bashrc 
+  247  glsuter
+  248  gluster
+  249  high_mem_jobs 
+  250  condor_status e564
+  251  condor_status slot1@e564.chtc.wisc.edu -af Cpus Memory Disk
+  252  status_mem mem1
+  253  status_mem mem2
+  254  status_mem mem3
+  255  high_mem_jobs 
+  256  cd /squid/bhimsaria/
+  257  ls
+  258  sudo rm *.mat
+  259  ls
+  260  cd NR/
+  261  ls
+  262  sudo rm *.txt
+  263  cd ..
+  264  ls
+  265  rm PBMDebruijn
+  266  rm PBMDebruijn.tar 
+  267  sudo rm PBMDebruijn.tar 
+  268  find ./ -type f -name *.txt
+  269  find ./ -type f
+  270  cd NR/
+  271  find ./ -type f
+  272  find ./ -type f | sudo xargs -n 1024 rm -f
+  273  ls
+  274  sudo rm *.txt
+  275  ls
+  276  cd ..
+  277  ls
+  278  sudo rmdir NR/
+  279  cd PBMDebruijn/
+  280  ls
+  281  sudo rm *.txt
+  282  ls
+  283  sudo rm *.mat DATA_seperate_all.tar 
+  284  ls
+  285  cd ..
+  286  ls
+  287  sudo rm listNR.txt PBMDebruijn/
+  288  sudo rmdir PBMDebruijn/
+  289  ls
+  290  cd ..
+  291  cd nu_shenx3/
+  292  ls
+  293  sudo rm *.pin
+  294  sudo rm *.psq
+  295  sudo rm *.phr
+  296  ls
+  297  exit
+  298  high_mem_jobs 
+  299  condor_status e564
+  300  condor_status slot1@e564.chtc.wisc.edu -af Cpus Memory Disk
+  301  condor_q mmillican
+  302  sudo mkdir /mnt/gluster/msain@wisc.edu
+  303  sudo mkdir /mnt/gluster/msain
+  304  gluster
+  305  sudo chown -R msain:msain /mnt/gluster/msain
+  306  sudo mkdir /squid/schimmenti
+  307  sudo chown -R schimmenti:schimmenti /squid/schimmenti
+  308  sudo mkdir /mnt/gluster/schimmenti
+  309  sudo chown -R schimmenti:schimmenti /mnt/gluster/schimmenti
+  310  high_mem_jobs 
+  311  condor_q buczkowski
+  312  condor_q buczkowski -af holdreason
+  313  high_mem_jobs 
+  314  status_mem mem1
+  315  status_mem mem3
+  316  condor_status e564
+  317  status_mem mem2
+  318  status_mem mem3
+  319  mem_summary 
+  320  gluster
+  321  ls
+  322  eixt
+  323  exit
+  324  high_mem_jobs 
+  325  ls tests/
+  326  high_mem_jobs 
+  327  status_mem mem1
+  328  status_mem mem2
+  329  status_mem mem3
+  330  ls /squid/eswright/
+  331  ls /squid/WidBiologyVetsigian/
+  332  ls -lh /squid/WidBiologyVetsigian/
+  333  cd /squid/WidBiologyVetsigian/
+  334  ls
+  335  cd
+  336  clear
+  337  high_mem_jobs 
+  338  gluster
+  339  cd /squid/WidBiologyVetsigian/
+  340  ls
+  341  sudo rm *.tar.gz
+  342  ls
+  343  sudo rm *.zip
+  344  ls
+  345  sudo rm *.Rdata
+  346  ls
+  347  sudo rm blocks.dat.gz prodigal qscore matrices.RData 
+  348  ls
+  349  cd CDSsBacillus2/
+  350  ls
+  351  rm ./*.gz
+  352  sudo rm ./*.gz
+  353  ls
+  354  cd ..
+  355  ls
+  356  sudo rmdir CDSsBacillus2/
+  357  cd ..
+  358  sudo rmdir WidBiologyVetsigian/
+  359  ls WidBiologyVetsigian/
+  360  ls | grep Wid
+  361  cd
+  362  clear
+  363  high_mem_jobs 
+  364  status_mem mem3
+  365  condor_status mem3
+  366  high_mem_jobs 
+  367  condor_q twhitman
+  368  condor_q -bet 109779842.0
+  369  high_mem_jobs 
+  370  status_mem mem1
+  371  status_mem mem2
+  372  condor_q rhtownsend
+  373  condor_history rhtownsend
+  374  clear
+  375  ls
+  376  ls .ssh/
+  377  ls .ssh/known_hosts 
+  378  ls -a
+  379  condor_status -constraint 'TotalGpus > 0' -af Machine Totalgpus Cudadevicename | sort | uniq
+  380  mem_summary 
+  381  condor_status -af Machine TotalDisk | sort | uniq
+  382  condor_status -af Machine TotalDisk | sort | uniq | sort -k 2 -n
+  383  condor_status -af Machine TotalDisk TotalMemory | sort | uniq | sort -k 2 -n
+  384  cd /squid/czhang72/
+  385  ls
+  386  ls -lh
+  387  ls -lh oldpdfs/
+  388  clear
+  389  ls
+  390  sudo rm *.jar
+  391  ls
+  392  sudo rm *.zip *.tar
+  393  ls
+  394  sudo rm k2pdfopt 
+  395  cd oldpdfs/
+  396  ls
+  397  sudo rm *.pdf
+  398  ls
+  399  cd ..
+  400  ls
+  401  cd pdf/
+  402  ls -lh
+  403  sudo ls pdf/
+  404  ls
+  405  cd pharmcc1k/
+  406  ls
+  407  ls PMC2900271/
+  408  sudo rm -rf PMC*
+  409  ls
+  410  cd ..
+  411  ls
+  412  sudo rm -rf pdf/
+  413  ls
+  414  sudo ls pdf/
+  415  ls
+  416  sudo rmdir oldpdfs/ pharmcc1k/
+  417  ls
+  418  cd pdf/
+  419  ls -lh
+  420  sudo -i
+  421  ls
+  422  sudo rmdir pdf/
+  423  ls
+  424  cd ..
+  425  cd
+  426  clear
+  427  high_mem_jobs 
+  428  status_mem mem1
+  429  status_mem mem2
+  430  status_mem mem3
+  431  module avail
+  432  high_mem_jobs 
+  433  condor_q snapieralski
+  434  condor_q -bet 109885272.0
+  435  less /etc/passwd
+  436  clear
+  437  module avail
+  438  module load mpi/gcc/mpich2-1.5
+  439  mpicc --version
+  440  mem_summary 
+  441  condor_status -af Machine TotalDisk | sort | uniq | sort -k 2 -n
+  442  sudo -i
+  443  ls -lrt
+  444  less /etc/passwd
+  445  sudo mkdir /mnt/gluster/hwang684
+  446  sudo chown -R hwang684:hwang684 /mnt/gluster/hwang684
+  447  gluster
+  448  less /etc/passwd
+  449  sudo mkdir /mnt/gluster/qchen295
+  450  sudo chown -R qchen295:qchen295 /mnt/gluster/qchen295
+  451  gluster
+  452  condor_q 109927833
+  453  condor_q 109927833 -af holdreason
+  454  high_mem_jobs 
+  455  which sethomequota
+  456  ls /home/zcohen3/
+  457  sudo -i
+  458  host 128.105.245.87
+  459  sudo -i
+  460  cd tests/
+  461  ls
+  462  mkdir trap
+  463  cd tra
+  464  cd trap/
+  465  ls
+  466  nano hello.sh
+  467  cp ~/submit/template.submit .
+  468  nano template.submit 
+  469  mkdir logs
+  470  ls
+  471  chmod 770 hello.sh 
+  472  ls
+  473  nano template.submit 
+  474  condor_submit template.submit 
+  475  condor_status -af Machine TotalDisk | sort | uniq | sort -k 2 -n
+  476  condor_q
+  477  condor_tail 109955154.0
+  478  clear
+  479  condor_q
+  480  condor_q -nobatch
+  481  condor_q -all -nobatch
+  482  condor_q -all -nobatch | tail -n 4
+  483  condor_q
+  484  condor_vacate_job 109955154.0
+  485  condor_q
+  486  ls
+  487  condor_q
+  488  nano hello.sh 
+  489  cp hello.sh chirp.sh
+  490  nano chirp.sh 
+  491  nano template.submit 
+  492  ls
+  493  condor_submit template.submit 
+  494  condor_q
+  495  ls
+  496  host 128.104.101.92
+  497  ls
+  498  less chirp.sh 
+  499  nano template.submit 
+  500  condor_submit template.submit 
+  501  ls
+  502  rm results.txt 
+  503  ls -lrt
+  504  mv 109958665_0.log logs/
+  505  ls
+  506  condor_q
+  507  condor_rm 109955154.0
+  508  condor_q
+  509  ls
+  510  condor_q
+  511  ls
+  512  condor_q
+  513  nano template.submit 
+  514  condor_submit template.submit 
+  515  condor_q
+  516  ls -lh
+  517  condor_q
+  518  ls
+  519  ls -lrt
+  520  condor_q -nobatch
+  521  less 109955154_0.log 
+  522  condor_rm -forcex 109955154.0
+  523  condor_
+  524  condor_q
+  525  ls -lrt
+  526  less 109955154_0.log 
+  527  mv 109955154_0.log logs/
+  528  ls -lrt
+  529  less 109958711_0.log 
+  530  cd logs/
+  531  less 109958711_0.err 
+  532  less 109958711_0.out 
+  533  cd ..
+  534  ls
+  535  condor_q
+  536  nano template.submit 
+  537  condor_submit template.submit 
+  538  less results.txt 
+  539  rm results.txt 
+  540  ls
+  541  condor_q
+  542  host 192.168.1.53
+  543  ls
+  544  ls -lrt
+  545  less 109958754_0.log 
+  546  mv 109958754_0.log logs/
+  547  cd logs/
+  548  less 109958754_0.err 
+  549  less 109958754_0.out 
+  550  less 109958754_0.err 
+  551  clear
+  552  ls
+  553  cd ..
+  554  ls
+  555  nano chirp.sh 
+  556  nano hello.sh 
+  557  nano template.submit 
+  558  condor_submit template.submit 
+  559  ls
+  560  rm results.txt 
+  561  ls
+  562  condor_q
+  563  condor_hold 109958728.0
+  564  condor_release 109958728.0
+  565  cd tests/trap/
+  566  ls
+  567  less results-chirped-test.txt 
+  568  ls -lh
+  569  condor_q
+  570  condor_vacate_job 109958728.0
+  571  ls
+  572  ls -lrt
+  573  ls
+  574  clear
+  575  ls
+  576  ls -lrt
+  577  less hello.sh 
+  578  condor_q
+  579  exit
+  580  high_mem_jobs 
+  581  status_mem mem1
+  582  condor_q snapieralski
+  583  condor_q -bet 109978386.0
+  584  condor_q -all -nobatch
+  585  condor_q lin292
+  586  condor_q -bet 109983911.0
+  587  high_mem_jobs 
+  588  condor_q toczydlowski
+  589  condor_q -bet 109981048.0
+  590  high_mem_jobs 
+  591  status_mem mem1
+  592  status_mem mem2
+  593  high_mem_jobs 
+  594  condor_q -all
+  595  condor_q wyan32
+  596  condor_q wyan32 -af holdreason
+  597  condor_q -hold
+  598  high_mem_jobs 
+  599  condor_q jkwan2
+  600  condor_q jkwan2 -af holdreason
+  601  high_mem_jobs 
+  602  less /etc/passwd
+  603  condor_q -constraint 'OpSysMajorVer == 6
+  604  condor_q -constraint 'OpSysMajorVer == 6' -af TotalMemory | sort | uniq | sort -n
+  605  condor_status -constraint 'OpSysMajorVer == 6' -af TotalMemory | sort | uniq | sort -n
+  606  condor_status -compact -constraint 'OpSysMajorVer == 6' -af TotalMemory | sort | uniq -c | sort -n
+  607  condor_status -compact -constraint 'OpSysMajorVer == 6' -af TotalMemory | sort | uniq -c | sort -n -k 2
+  608  clear
+  609  condor_q
+  610  cd tests/tra
+  611  cd tests/trap/
+  612  ls
+  613  less hello.sh 
+  614  less 109958728_0.log 
+  615  cd logs/
+  616  cd
+  617  exit
+  618  ls /squid/tyang29/
+  619  sudo -i
+  620  clear
+  621  sudo -i
+  622  clear
+  623  condor_config_val MAX_JOBS_PER_OWNER
+  624  less /etc/passwd
+  625  sudo -i
+  626  clear
+  627  gluster
+  628  ls /mnt/gluster/chtc/
+  629  ls /squid/jcpatton/
+  630  ls /squid/jcpatton/gcc
+  631  sudo cp -r /squid/jcpatton/gcc /mnt/gluster/gcc-4.9
+  632  ls /mnt/gluster/gcc-4.9/
+  633  cd /mnt/gluster/gcc-4.9/
+  634  bin/gcc --version
+  635  cd ..
+  636  mv gcc-4.9/ gcc-4.4/
+  637  sudo mv gcc-4.9/ gcc-4.4/
+  638  ls
+  639  cd
+  640  clear
+  641  condor_q li443
+  642  gpu_nodes 
+  643  ls
+  644  module load ansys-18.2 
+  645  echo $PATH
+  646  which RunWB2
+  647  which runwb2
+  648  mkdir bunny
+  649  cd bunny/
+  650  ls
+  651  nano compiling.sub 
+  652  nano compile.txt
+  653  nano compiling.sub 
+  654  condor_submit -i compiling.sub 
+  655  ls
+  656  less compiling.sub 
+  657  cd ..
+  658  ls
+  659  recode-sr-latin 
+  660  ls
+  661  less /etc/passwd
+  662  mkdir workbench
+  663  sudo -i
+  664  rmdir workbench/
+  665  less /etc/passwd
+  666  condor_history jwu385 -af RequestMemory MemoryUsage RequestDisk DiskUsage | head -n 60
+  667  sudo -i
+  668  cd tests/
+  669  ls
+  670  ls -lrt
+  671  cd tra
+  672  cd trap/
+  673  ls
+  674  less chirp.sh 
+  675  less results-chirped-test.txt 
+  676  less results.txt 
+  677  less template.submit 
+  678  less hello.sh 
+  679  top
+  680  condor_q bwang7
+  681  condor_q bwang7 -nobatch
+  682  less chirp.sh 
+  683  ls
+  684  less tmep
+  685  less template.submit 
+  686  exit
+  687  condor_q -all
+  688  gluster
+  689  exit
+  690  sudo -i
+  691  sudo quota -s jwu385
+  692  condor_q jwu385
+  693  condor_q jwu385 -af holdreason
+  694  sudo -i
+  695  condor_q jwu385
+  696  sudo -i
+  697  exit
+  698  otp
+  699  top
+  700  condor_q -all
+  701  top
+  702  condor_q jing
+  703  high_mem_jobs 
+  704  condor_q ijmiller2 -af:r requirements
+  705  condor_q millican -af:r requirements
+  706  condor_q mmillican -af:r requirements
+  707  status_mem mem1
+  708  status_mem mem2
+  709  status_mem mem3
+  710  high_mem_jobs 
+  711  status_mem mem1
+  712  status_mem mem2
+  713  condor_q jwu385
+  714  condor_q jwu385 -af HoldReason
+  715  condor_q jwu385 -af HoldReason | grep core
+  716  condor_q jwu385 -af HoldReason | grep core | wc -l
+  717  clear
+  718  exit
+  719  pwd
+  720  ls
+  721  cd hello/
+  722  pwd
+  723  ls
+  724  rm hello-chtc_108679291*
+  725  ls
+  726  less hello-chtc.sub 
+  727  condor_submit hello-chtc.sub 
+  728  condor_q
+  729  ls
+  730  less hello-chtc_110468308.log 
+  731  less hello-chtc_110468308_0.err 
+  732  less hello-chtc_110468308_0.out 
+  733  less hello-chtc_110468308_1.out 
+  734  less hello-chtc_110468308_2.out 
+  735  less hello-chtc_110468308.log 
+  736  clear
+  737  cd
+  738  hostname
+  739  pwd
+  740  cd hello/
+  741  ls
+  742  condor_submit hello-chtc.sub
+  743  condor_q
+  744  condor_q -all
+  745  condor_q
+  746  clear
+  747  cd
+  748  pwd
+  749  ls /mnt/gluster/Your latest batch of jobs in CHTC is set so that it can only run on our build nodes -- this is both preventing other people from using them and severely limiting your throughput, and in general, is not how the build nodes are meant to be used. 
+  750  Please remove this current batch of jobs and resubmit without the requirements and options that request the build nodes (look for anything with "BuildJob" or "BuildSlot).  If you have any questions about this, let me know!
+  751  Cheers,
+  752  clear
+  753  ls /mnt/gluster/ckoch5
+  754  cd /mnt/gluster/ckoch5/
+  755  ls
+  756  cd ~
+  757  pwd
+  758  sudo -i
+  759  exit
+  760  sethomequota jwu385 5060
+  761  sethomequota jwu385 50 50
+  762  sethomequota jwu385 50 60
+  763  cd tests/trap/
+  764  ls
+  765  nano sleep.sh
+  766  nano hello.sh 
+  767  cp template.submit sleep.submit
+  768  nano sleep.submit 
+  769  nano chirp.sh 
+  770  nano sleep.sh 
+  771  echo $*
+  772  nano sleep.sh 
+  773  rm results.txt 
+  774  ls
+  775  nano hello.sh 
+  776  chmod +x sleep.sh 
+  777  nano sleep.submit 
+  778  condor_submit sleep.submit 
+  779  condor_status matlab-build-1 matlab-build-2 matlab-build-5
+  780  condor_q
+  781  exit
+  782  high_mem_jobs 
+  783  status_mem mem2
+  784  status_mem mem3
+  785  high_mem_jobs 
+  786  less /etc/passwd
+  787  sudo mkdir /mnt/gluster/jrwest
+  788  sudo chown -R jrwest:jrwest /mnt/gluster/jrwest/
+  789  gluster
+  790  exit
+  791  gluster
+  792  ls
+  793  cd tests/trap/
+  794  ls
+  795  less sleep.sh 
+  796  less results-sleep.txt 
+  797  less sleep.sh 
+  798  less hello.sh 
+  799  high_mem_jobs 
+  800  module avail
+  801  ls
+  802  cd logs/
+  803  ls
+  804  find . -type f -exec touch {} +
+  805  ls -lh
+  806  condor_q jwu385
+  807  less /etc/passwd
+  808  cd ..
+  809  ls
+  810  pwd
+  811  less /etc/passwd
+  812  high_mem_jobs 
+  813  less bin/high_mem_jobs 
+  814  condor_q yshi43
+  815  condor_q yshi43 -af requestcpus requestmemory requestdisk
+  816  condor_status e082.chtc.wisc.edu -af TotalMemory
+  817  condor_q yshi43 -af clusterid procid requestcpus requestmemory requestdisk remotehost
+  818  condor_q yshi43 -af clusterid procid requestcpus requestmemory requestdisk remotehost > weird_memory_reporting
+  819  ls
+  820  hostname
+  821  condor_q
+  822  ls /etc/passwd
+  823  less /etc/passwd
+  824  high_mem_jobs 
+  825  host 128.105.244.87
+  826  condor_status e565 -af opsysmajorver
+  827  condor_status e565 -af opsysmajorver hasgluster
+  828  ls
+  829  sudo -i
+  830  clear
+  831  condor_status -l slot1@e500.chtc.wisc.edu | grep -i has
+  832  condor_status -l slot1@matlab-build-1.chtc.wisc.edu | grep -i has
+  833  condor_status -l slot1@matlab-build-2.chtc.wisc.edu | grep -i has
+  834  host 128.105.244.111
+  835  condor_status -l e199.chtc.wisc.edu | grep -i has | sort | uniq
+  836  condor_status -constraint '(has_avx) && (has_sse4_1) && (has_sse4_2) && (has_ssse3)'
+  837  condor_status -constraint '(has_avx) && (has_sse4_1) && (has_sse4_2) && (has_ssse3) && OpSysMajorVer == 6'
+  838  condor_status -l e199.chtc.wisc.edu | grep -i has | sort | uniq
+  839  condor_status -constraint '(has_avx) && (has_sse4_1) && (has_sse4_2) && (has_ssse3)'
+  840  nano box.sh
+  841  nano netrc
+  842  nano box.sh 
+  843  nano netrc 
+  844  nano box.sh 
+  845  nano netrc 
+  846  nano box.sh 
+  847  ls
+  848  nano box.sh 
+  849  chmod 770 box.sh 
+  850  ls
+  851  nano box.sh 
+  852  nano netrc 
+  853  nano box.sh 
+  854  nano netrc 
+  855  ./box.sh 
+  856  man curl
+  857  mv netrc .netrc
+  858  nano box.sh 
+  859  ./box.sh 
+  860  nano box.sh 
+  861  nano .netrc 
+  862  ./box.sh 
+  863  nano .netrc 
+  864  nano box.sh 
+  865  ./box.sh 
+  866  nano box.sh 
+  867  ./box.sh 
+  868  nano box.sh 
+  869  ./box.sh 
+  870  nano box.sh 
+  871  ./box.sh 
+  872  nano box.sh 
+  873  less /etc/group
+  874  exit
+  875  clear
+  876  module avail
+  877  sudo less /home/ijmiller2/FL48-1_re-asm/FL48-1_110463198.log
+  878  condor_q ijmiller2
+  879  ls
+  880  cd submit/
+  881  ls
+  882  cp build.submit ..
+  883  cd ..
+  884  ls
+  885  nano build.submit 
+  886  condor_submit -i build.submit 
+  887  sudo -i
+  888  condor_q 110463198
+  889  sudo -i
+  890  high_mem_jobs 
+  891  status_mem mem3
+  892  quotas cleeds
+  893  sudo quota -s cleeds
+  894  sethomequota rhickey2 50 60
+  895  high_mem_jobs 
+  896  sudo quota -s yshi43
+  897  sudo -i
+  898  ls
+  899  vi -b Meta_242_Megahit.sh 
+  900  rm Meta_242_Megahit.sh 
+  901  ls
+  902  clear
+  903  ls /home/rhickey2/
+  904  sudo mkdir /mnt/gluster/rhickey2
+  905  sudo chown -R rhickey2:rhickey2 /mnt/gluster/rhickey2
+  906  gluster
+  907  clear
+  908  nano bin/check_new_users
+  909  chmod 770 bin/check_new_users 
+  910  source .bashrc 
+  911  source .bash_profile 
+  912  check_new_users 
+  913  cd hello/
+  914  ls
+  915  mv hello-chtc_1104* old_files/
+  916  ls
+  917  condor_submit hello-chtc.sub 
+  918  condor_q
+  919  condor_status
+  920  condor_status | grep gitter
+  921  condor_q -all
+  922  ls /mnt/gluster/swang495/
+  923  ls /mnt/gluster/toczydlowski/allsamples-longreads-m5max2M3n3_2.0Beta10-allsampsincstacks_0/
+  924  gluster
+  925  clear
+  926  gluster
+  927  ssh ckoch5@matlab-build-2.chtc.wisc.edu
+  928  condor_q
+  929  condor_q -l 109958728.0
+  930  condor_q 109958728.0 -af Iwd
+  931  condor_q -l 109958728.0 > .job.ad
+  932  ls -a
+  933  grep Iwd .job.ad
+  934  clear
+  935  cd tests/
+  936  ls
+  937  ls -lrt
+  938  cd singularity/
+  939  ls
+  940  less hello.sh 
+  941  less wrapper.py 
+  942  less hello.sh 
+  943  pwd
+  944  condor_status -constraint 'HAS_SINGULARITY;
+  945  condor_status -constraint 'HAS_SINGULARITY'
+  946  condor_q -l e344 | grep -i singularity
+  947  ssh ckoch5@matlab-build-2.chtc.wisc.edu
+  948  condor_status -l matlab-build-2 | grep -i singularity
+  949  condor_status -constraint 'HasSingularity'
+  950  clear
+  951  requirements = (HAS_SINGULARITY == true || HasSingularity == true)
+  952  clear
+  953  exit
+  954  cd tests/singularity/
+  955  ls
+  956  less hello.sh 
+  957  cd
+  958  cd hello/
+  959  less hello-chtc.sub 
+  960  condor_submit -i hello-chtc.sub 
+  961  condor_status -af Mips | sort -n | uniq -c
+  962  ssh ckoch5@matlab-build-2.chtc.wisc.edu
+  963  condor_q okada2
+  964  condor_q okada2 -af holdreason
+  965  less /etc/group
+  966  condor_status mem3 -af facility
+  967  less /etc/group
+  968  cd tests/singularity/
+  969  ls
+  970  less hello.sh 
+  971  nano template.submit 
+  972  pwd
+  973  gluster
+  974  less /etc/group
+  975  exit
+  976  htop
+  977  htop -u ckoch5
+  978  htop
+  979  man top
+  980  top -H
+  981  exit
+  982  cd /home/groups/
+  983  ls
+  984  ls -lh
+  985  condor_status e318
+  986  condor_status -compact e318
+  987  condor_status -compact e171
+  988  gluster
+  989  exit
+  990  high_mem_jobs 
+  991  condor_q rhickey2
+  992  condor_q rhickey2 -nobatch
+  993  condor_q rhickey2 -nobatch -af remotehost
+  994  condor_q rhickey2 -af requestcpus requestmemory requestdisk
+  995  condor_q -l 111470910.0
+  996  condor_q rhickey2 -nobatch -af remotehost
+  997  condor_q rhickey2 -nobatch
+  998  high_mem_jobs 
+  999  status_mem mem1
+ 1000  status_mem mem2
+ 1001  history | tail
+ 1002  history | cut -d "  " -f 2 | cut -d " " -f 1
+ 1003  history | cut -d " " -f 2 | cut -d " " -f 1
+ 1004  clear
+ 1005  ls
+ 1006  history | cut -d " " -f 5
+ 1007  history | cut -d " " -f 5 | sort | uniq -c > history.txt
+ 1008  less history.txt 
+ 1009  cat history.txt | sort -k 1 -n
+ 1010  cat history.txt | sort -k 1 -n > history.sorted
+ 1011  less /etc/passwd
+ 1012  ls
+ 1013  less history.txt 
+ 1014  history > 2018-04-27.history.txt

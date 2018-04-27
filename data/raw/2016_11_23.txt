@@ -1,0 +1,691 @@
+    1  sudo chown -R pli74:pli74 /mnt/gluster/pli74/
+    2  clear
+    3  ls
+    4  cd R_installs/
+    5  ls
+    6  cd Rcpp/
+    7  ls
+    8  mkdir gluster
+    9  condor_q
+   10  mv R-3.2.5.tar.gz process.* int* gluster/
+   11  ls
+   12  mv build* gluster/
+   13  ls
+   14  cp run_Rcpp.sh test_Rcpp.R test.submit IndividualLoop.cpp gluster/
+   15  cd gluster/
+   16  ls
+   17  nano sample.cpp
+   18  less test_Rcpp.R 
+   19  condor_submit -i int.sub 
+   20  ls
+   21  exit
+   22  cd R_installs/Rcpp/
+   23  ls
+   24  cd /mnt/gluster/ckoch5/Rcpp/
+   25  ls
+   26  ls bin/
+   27  less bin/R
+   28  pwd
+   29  cd
+   30  export PATH=/mnt/gluster/ckoch5/Rcpp/bin:$PATH
+   31  R
+   32  cd R_installs/Rcpp/docker/
+   33  ls
+   34  nano test.submit 
+   35  ls
+   36  less mtian_80136848.log 
+   37  less IndividualLoop.cpp 
+   38  less test_RcppArmadillo.log 
+   39  cd 
+   40  clear
+   41  condor_q -all
+   42  quota -s smei5
+   43  quota -s smei54
+   44  quota -s smei4
+   45  sudo quota -s smei4
+   46  ls -lrt /home
+   47  ssh jalal@144.92.237.231
+   48  ssh jalal@best-linux.cs.wisc.edu
+   49  cd tests/
+   50  ls
+   51  mkdir python_input
+   52  ls
+   53  cd python_input/
+   54  touch X_1 X_2 X_3
+   55  ls
+   56  nano script.py
+   57  nano submit_file
+   58  ls
+   59  ls X*
+   60  ls X* > filelist
+   61  less filelist 
+   62  nano submit_file 
+   63  condor_submit submit_file 
+   64  condor_q
+   65  condor_q zcohen3 -nobatch
+   66  condor_q 80143771.0 -af RequestMemory RequestCpus RequestDisk
+   67  status_host mem1
+   68  status_host mem2
+   69  condor_status mem2
+   70  condor_status wid-003
+   71  status_host wid-003
+   72  status_host mem1
+   73  cd R_installs/Rcpp/docker/
+   74  ls
+   75  less mtian_80136848.log 
+   76  less test_RcppArmadillo.log 
+   77  less test.r 
+   78  less test.submit 
+   79  ls -lrt /home
+   80  ls
+   81  cd
+   82  cd tests/python_input/
+   83  ls
+   84  less submit_file 
+   85  less script.py 
+   86  less filelist 
+   87  pwd
+   88  condor_q zcohen3 -nobatch
+   89  clear
+   90  ls
+   91  cd
+   92  ls
+   93  ls -lrt /home
+   94  sudo mkdir /mnt/gluster/nu_pankaj
+   95  sudo chown -R nu_pankaj:nu_pankaj /mnt/gluster/nu_pankaj
+   96  ls
+   97  cd tests/
+   98  ls
+   99  mkidr python_gensim
+  100  mkdir python_gensim
+  101  cd python_gensim/
+  102  sudo quota -s smei4
+  103  sethomequota smei4 200 220
+  104  sudo quota -s smei4
+  105  cp ~/submit/build.submit ./
+  106  ls
+  107  nano build.submit 
+  108  condor_submit -i build.submit
+  109  cd tests/python_gensim/
+  110  ls
+  111  condor_submit -i build.submit 
+  112  ls
+  113  clear
+  114  cp ~/submit/test.submit ./
+  115  ls
+  116  nano test.submit 
+  117  nano run_py.sh
+  118  nano test.py
+  119  ls
+  120  chmod +x test.py run_py.sh 
+  121  nano test.submit 
+  122  condor_submit test.submit 
+  123  condor_q
+  124  condor_q -nobatch
+  125  condor_rm 80143774
+  126  condor_q
+  127  condor_rm 80144797.0
+  128  condor_q
+  129  ls
+  130  less opensim_80144799.out
+  131  less opensim_80144799_0.out 
+  132  less opensim_80144799_0.err 
+  133  nano test.py 
+  134  condor_submit test.submit 
+  135  condor_q
+  136  ls
+  137  less opensim_80144800_0.err 
+  138  less opensim_80144800_0.out 
+  139  less opensim_80144800_0.err 
+  140  nano test.py 
+  141  condor_submit test.submit 
+  142  condor_q
+  143  ls -lrt
+  144  condor_q
+  145  condor_
+  146  condor_q
+  147  ls
+  148  condor_q jalal
+  149  condor_q
+  150  ls
+  151  condor_q
+  152  ls -lrt
+  153  condor_q
+  154  ls -lrt
+  155  less opensim_80144801_0.out 
+  156  less opensim_80144801_0.err 
+  157  condor_q
+  158  ls -lrt
+  159  less opensim_80144801_0.out 
+  160  nano test.py 
+  161  less opensim_80144801_0.out 
+  162  less opensim_80144800_0.err
+  163  nano run_py.sh 
+  164  ls -lrt
+  165  ls -lrt /home
+  166  sudo mkdir /squid/cmcallester
+  167  sudo chown -R cmcallester:cmcallester /squid/cmcallester/
+  168  sudo chown -R jalal:jalal /squid/jalal/
+  169  cd tests/python_gensim/
+  170  ls
+  171  nano run_py.sh 
+  172  condor_submit test.submit 
+  173  ls -lrt /home
+  174  ls
+  175  cd R_installs/Rcpp/docker/
+  176  ls
+  177  pwd
+  178  cd
+  179  clear
+  180  condor_q
+  181  sudo -i
+  182  clear
+  183  condor_q zcohen3 -af MemoryUsage DiskUsage
+  184  condor_q zcohen3 -af RequestMemory RequestDisk
+  185  condor_q zcohen3 -nobatch
+  186  condor_status
+  187  cd R_installs/Rcpp/
+  188  ls
+  189  git clone https://github.com/andypohl/armadillo sandbox
+  190  cd sandbox/
+  191  ls
+  192  git branch
+  193  git branch -a
+  194  git checkout sandbox
+  195  ls
+  196  less repack_and_test.sh 
+  197  less test.r 
+  198  less repack_and_test.submit 
+  199  condor_submit repack_and_test.submit 
+  200  condor_q
+  201  ls
+  202  less repack_and_test.out 
+  203  less repack_and_test.sh 
+  204  less test.r 
+  205  cp repack_and_test.sh test.sh
+  206  ls
+  207  nano test.sh 
+  208  tar xzf chtc-R-3.1.2-RccpArmadillo.tar.gz 
+  209  ls
+  210  rm -rf chtc-R
+  211  ls
+  212  nano test.sh 
+  213  less test.r 
+  214  cp ../test_Rcpp.R ../IndividualLoop.cpp ./
+  215  nano test_Rcpp.R 
+  216  ls
+  217  cp ../test.submit ./
+  218  nano test.submit 
+  219  ls -lh
+  220  nano test.submit 
+  221  less test.sh 
+  222  nano test.sh 
+  223  ls
+  224  nano test_Rcpp.R 
+  225  nano test.submit 
+  226  condor_submit test.submit 
+  227  condor_q
+  228  sudo mkdir /squid/tamorrell
+  229  sudo chown -R tamorrell:tamorrell /squid/tamorrell
+  230  condor_q
+  231  ls
+  232  less sandbox_80153734_0.out 
+  233  less sandbox_80153734_0.err 
+  234  nano test.submit 
+  235  condor_submit test.submit 
+  236  condor_q
+  237  ls
+  238  ls -lrt
+  239  less sandbox_80153791_0.out
+  240  ls
+  241  cd R_installs/
+  242  ls
+  243  cd Rcpp/sandbox/
+  244  ls
+  245  cp chtc-R-3.1.2-RccpArmadillo.tar.gz /squid/
+  246  sudo cp chtc-R-3.1.2-RccpArmadillo.tar.gz /squid/
+  247  ls
+  248  nano test.submit 
+  249  less test.sh 
+  250  pwd
+  251  sudo -i
+  252  pwd
+  253  nano test.sh 
+  254  nano test_Rcpp.R 
+  255  condor_submit test.submit 
+  256  ls -lrt
+  257  condor_q
+  258  sandbox_80153919_0.err
+  259  less sandbox_80153919_0.err
+  260  less sandbox_80153919_0.out 
+  261  less test_Rcpp.R 
+  262  less test.sh 
+  263  ls
+  264  nano test.submit 
+  265  ls -l /squid/
+  266  condor_submit test.submit 
+  267  condor_q
+  268  ls
+  269  ls -lrt
+  270  less sandbox_80153920_0.out
+  271  less test.submit 
+  272  quota -s jgpower
+  273  sudo quota -s jgpower
+  274  sethomequota jgpower 50 60
+  275  sudo quota -s jgpower
+  276  condor_q megarcia
+  277  exit
+  278  ls -lrt /home
+  279  condor_q mtian8 -af HoldReason
+  280  cd /squid/
+  281  ls -lh chtc-R-3.1.2-RcppArmadillo.tar.gz
+  282  sudo ls -lh chtc-R-3.1.2-RcppArmadillo.tar.gz
+  283  ls -lh | grep Rcpp
+  284  ls
+  285  cd
+  286  cd R_installs/
+  287  ls
+  288  cd Rcpp/sandbox/
+  289  ls
+  290  sudo cp chtc-R-3.1.2-RccpArmadillo.tar.gz /squid/
+  291  cd /squid/
+  292  ls -lrt chtc-R-3.1.2-RccpArmadillo.tar.gz 
+  293  sudo chown nobody:nobody chtc-R-3.1.2-RccpArmadillo.tar.gz 
+  294  ls
+  295  cd
+  296  yum list available | grep -i emacs
+  297  yum info emacs-el.x86_64
+  298  yum info crm114-emacs.x86_64
+  299  yum info clips-emacs.noarch
+  300  yum search emacs
+  301  yum info emacs.x86_64
+  302  cd R_installs/Rcpp/
+  303  ls
+  304  pwd
+  305  sudo -i
+  306  clear
+  307  yum seach emacs
+  308  yum search emacs
+  309  yum info emacs.x86_64
+  310  sudo mkdir /mnt/gluster/jalal
+  311  ls
+  312  ls R_installs/
+  313  tar xzf R_installs/R.tar.gz 
+  314  ls
+  315  rm -rf R
+  316  ls
+  317  ping 2601:1c0:6b00:34e9:f915:6658:803d:c275
+  318  ifconfig
+  319  ping6 2601:1c0:6b00:34e9:f915:6658:803d:c275
+  320  dig submit-3.chtc.wisc.edu AAAA
+  321  sudo -i 
+  322  wget http://proxy.chtc.wisc.edu/SQUID/chtc-R-3.1.2-RccpArmadillo.tar.gz
+  323  ls
+  324  rm chtc-R-3.1.2-RccpArmadillo.tar.gz 
+  325  cd R_installs/
+  326  sudo -i
+  327  ls
+  328  cd Rcpp/
+  329  ls
+  330  mkdir squid_test
+  331  cd squid_test/
+  332  cp ../test.submit ./
+  333  ls
+  334  nano test.submit 
+  335  cp ../test_Rcpp.R ../run_Rcpp.sh ./
+  336  ls
+  337  nano test.submit 
+  338  cp ../IndividualLoop.cpp ./
+  339  ls
+  340  less test.submit 
+  341  nano test.submit 
+  342  ls
+  343  condor_submit test.submit 
+  344  condor_q
+  345  ls
+  346  less squid_80560461_0.out 
+  347  less squid_80560461_0.err 
+  348  less squid_80560461.log 
+  349  condor_q
+  350  less test.submit 
+  351  less run_Rcpp.sh 
+  352  nano run_Rcpp.sh 
+  353  ls
+  354  less test_Rcpp.Rout 
+  355  condor_submit test.submit 
+  356  condor_q mtian8
+  357  condor_q mtian8 -af HoldReason
+  358  condor_q mtian8 -nobatch
+  359  condor_q 80404135.0 -af Iwd
+  360  condor_q 80404135.0 -af UserLog
+  361  sudo -i
+  362  condor_q
+  363  condor_q mtian8
+  364  condor_q mtian8 -nobatch
+  365  ls /squid/chtc-R-3.1.2-RccpArmadillo.tar.gz 
+  366  ls -lh /squid/chtc-R-3.1.2-RccpArmadillo.tar.gz 
+  367  ls -lh /squid/
+  368  condor_q mtian8 -nobatch
+  369  condor_q
+  370  ls
+  371  ls -lrt
+  372  less squid_80562091_0.out 
+  373  exit
+  374  ls
+  375  condor_q mtian8
+  376  condor_q mtian8 -nobatch
+  377  condor_q -bet 80404135.0
+  378  condor_q
+  379  sudo chmod -R jalal:jalal /mnt/gluster/jalal/
+  380  sudo chown -R jalal:jalal /mnt/gluster/jalal/
+  381  condor_q -all
+  382  ls
+  383  cd hello/
+  384  ls
+  385  less hello-chtc.sub 
+  386  ls /squid/chtc-R-3.1.2-RccpArmadillo.tar.gz 
+  387  ls -lh /squid/chtc-R-3.1.2-RccpArmadillo.tar.gz 
+  388  wget http://proxy.chtc.wisc.edu/SQUID/chtc-R-3.1.2-RcppArmadillo.tar.gz
+  389  wget http://proxy.chtc.edu/SQUID/chtc-R-3.1.2-RcppArmadillo.tar.gz
+  390  wget http://proxy.chtc.wisc.edu/SQUID/chtc-R-3.1.2-RcppArmadillo.tar.gz
+  391  ls /squid/ckoch5/
+  392  wget http://proxy.chtc.wisc.edu/SQUID/ckoch5/Python-2.7.7.tgz
+  393  ls /squid/
+  394  wget http://proxy.chtc.wisc.edu/SQUID/sl6-python273.tar.gz
+  395  wget http://proxy.chtc.wisc.edu/SQUID/chtc-R-3.1.2-RccpArmadillo.tar.gz
+  396  cd /squid/
+  397  ls chtc-R-3.1.2-RccpArmadillo.tar.gz 
+  398  mv chtc-R-3.1.2-RccpArmadillo.tar.gz 
+  399  mv chtc-R-3.1.2-RccpArmadillo.tar.gz chtc-R-3.1.2-RccpArmadillo.tar.gz 
+  400  mv chtc-R-3.1.2-RccpArmadillo.tar.gz chtc-R-3.1.2-RcppArmadillo.tar.gz 
+  401  sudo mv chtc-R-3.1.2-RccpArmadillo.tar.gz chtc-R-3.1.2-RcppArmadillo.tar.gz 
+  402  ls -lh chtc-R-3.1.2-RcppArmadillo.tar.gz 
+  403  clear
+  404  cd
+  405  less hello/hello-chtc.sub 
+  406  nano hello/hello-chtc.sub 
+  407  ping 73.240.169.63
+  408  condor_q mccallester
+  409  condor_q cmcallester
+  410  condor_q -all
+  411  condor_q asheldon -af HoldReason
+  412  type bash
+  413  type gfortran
+  414  type nedit
+  415  type moo
+  416  echo $?
+  417  condor_q -all
+  418  export PATH
+  419  echo $PATH
+  420  ls
+  421  cd tests/
+  422  ls
+  423  cd hello
+  424  ls
+  425  cd ..
+  426  cd hello/
+  427  ls
+  428  nano hello-chtc.sub 
+  429  ls
+  430  nano hello-chtc.sh 
+  431  nano hello-chtc.sub 
+  432  condor_submit hello-chtc.sub 
+  433  condor_q
+  434  ls
+  435  less hello-chtc_80606411_0.out 
+  436  which gfortran
+  437  which g77
+  438  less hello-chtc_80606411_0.out 
+  439  clear
+  440  ls
+  441  cd
+  442  clear
+  443  module avail
+  444  ls bin/
+  445  status_host mem2
+  446  condor_q loperapena
+  447  ls
+  448  cd tests/
+  449  ls
+  450  mkdir notify
+  451  cd notify/
+  452  cp ~/submit/test.submit 
+  453  cp ~/submit/test.submit ./
+  454  ls
+  455  nano test.submit 
+  456  nano hello.sh
+  457  chmod +x hello.sh 
+  458  ls
+  459  less test.submit 
+  460  nano test.submit 
+  461  mkdir logs
+  462  less test.submit 
+  463  nano notification.sub
+  464  nano notify.dag
+  465  ls
+  466  less notify.dag 
+  467  condor_submit_dag notify.dag 
+  468  condor_q
+  469  condor_rm ckoch5
+  470  ls
+  471  rm hello_80618781_*
+  472  rm notify.dag.*
+  473  ls
+  474  nano notification.sub 
+  475  condor_submit_dag notify.dag 
+  476  condor_q
+  477  ls
+  478  less notify.dag.dagman.out 
+  479  rm notify.dag.*
+  480  rm hello_80618784_*
+  481  ls
+  482  which true
+  483  nano notification.sub 
+  484  condor_submit notify.dag 
+  485  condor_submit_dag notify.dag 
+  486  condor_q
+  487  ls
+  488  condor_q
+  489  cat *.out
+  490  cat hello*.out
+  491  less
+  492  ls
+  493  less notify.dag.dagman.out 
+  494  ls
+  495  cd tests/
+  496  ls
+  497  mkdir retries
+  498  exit
+  499  ls
+  500  exit
+  501  ls
+  502  condor_q zcohen3
+  503  condor_q zcohen3 -af RequestCpus RequestMemory RequestDisk
+  504  status_host mem1
+  505  status_host mem2
+  506  status_host wid-003
+  507  condor_q zcohen3
+  508  status_host mem1
+  509  condor_q zcohen3
+  510  status_host mem1
+  511  condor_q zcohen3 -af RequestCpus RequestMemory RequestDisk
+  512  ls -lrt /home
+  513  sudo mkdir /squid/amadrid
+  514  sudo chown -R amadrid:amadrid /squid/amadrid/
+  515  ls /squid/ | grep amadrid
+  516  ls -lh /squid/ | grep amadrid
+  517  man chown
+  518  sudo chown -R amadrid:amadrid /squid/amadrid/
+  519  status_host mem1
+  520  condor_q zcohen3 -af RequestCpus RequestMemory RequestDisk
+  521  status_host wid-003
+  522  top
+  523  ls -lh /mnt/gluster | grep pli
+  524  ls -lrt /home
+  525  sudo -i
+  526  exit
+  527  condor_q loperapena
+  528  status_host mem2
+  529  yum search gdal
+  530  yum version gdal-devel.x86_64
+  531  yum info gdal-devel.x86_64
+  532  yum info gdal.x86_64
+  533  ldconfig -p | grep gdal
+  534  ldconfig -p | grep -i gdal
+  535  sudo mkdir /squid/rzheng27
+  536  sudo chown -R rzheng27:rzheng27 /squid/rzheng27/
+  537  condor_q pli7
+  538  condor_q http://chtc.cs.wisc.edu/HPCuseguide.shtml
+  539  condor_q pli74
+  540  condor_q pli74 -af UserLog
+  541  sudo less /home/pli74/ant/htc_job/xcor-chtc_80636032.log
+  542  condor_q -all -af HoldReason | grep STARTER
+  543  condor_q pli74 -hold -af HoldReason
+  544  cd tests/
+  545  ls
+  546  mkdir comma_transfer
+  547  cd comma_transfer/
+  548  cp ~/submit/test.submit ./
+  549  ls
+  550  touch apple
+  551  touch banana
+  552  touch orange
+  553  nano hello.sh
+  554  nano test.submit 
+  555  condor_submit test.submit 
+  556  ls
+  557  rm fruit_8063603*
+  558  ls
+  559  chmod +x hello.sh 
+  560  nano test.submit 
+  561  condor_submit test.submit 
+  562  sudo quota -s pli74
+  563  ls -lrt /squid/
+  564  condor_q zcohen3
+  565  condor_q zcohen3 -nobatch
+  566  condor_q 80635978.0 -af RequestCpus RequestMemory RequestDisk
+  567  status_host mem1
+  568  condor_q zcohen3 -nobatch
+  569  condor_q zcohen3
+  570  condor_q zcohen3 -af RequestCpus RequestMemory RequestDisk
+  571  status_host mem1
+  572  status_host wid-003
+  573  status_host mem2
+  574  status_host mem1
+  575  condor_q zcohen3
+  576  ls
+  577  exit
+  578  ls -lrt /home/
+  579  sudo mkdir /mnt/gluster/twhitman
+  580  sudo chown -R twhitman:twhitman /mnt/gluster/twhitman/
+  581  condor_q 80646366.0
+  582  condor_q 80646366.0 -af RequestCpus RequestMemory RequestDisk
+  583  status_host meme1
+  584  status_host mem1
+  585  status_host meme1
+  586  condor_q 80646366.0 -af RequestCpus RequestMemory RequestDisk
+  587  condor_q 80646366.0
+  588  exit
+  589  pwd
+  590  ls -lh
+  591  cd hello/
+  592  ls
+  593  ls -lh
+  594  ls -lh /home
+  595  clear
+  596  cd ..
+  597  ls
+  598  pwd
+  599  condor_q 80649329.0 -af RequestCpus RequestMemory RequestDisk
+  600  status_host mem1
+  601  status_host mem2
+  602  status_host mem1
+  603  condor_q zcohen3
+  604  exit
+  605  ls -lrt /home
+  606  sudo mkdir /mnt/gluster/mjmiao
+  607  sudo chown -R mjmiao:mjmiao /mnt/gluster/mjmiao
+  608  ls -lrt
+  609  ls -lrt /home
+  610  ldconfig -p | grep libxslt
+  611  ldconfig -p | grep libxml
+  612  cd tests/
+  613  ls
+  614  cd interactive
+  615  ls
+  616  condor_submit -i interactive.sub 
+  617  condor_q zcohen3
+  618  ls -lrt /home
+  619  sudo mkidr /squid/peherstorfer
+  620  sudo mkdir /squid/peherstorfer
+  621  sudo chown -R peherstorfer:peherstorfer /squid/peherstorfer/
+  622  ls /squid/peherstorfer/
+  623  sudo chown -R peherstorfer:peherstorfer /squid/peherstorfer/
+  624  ls /usr/include/ | grep xslt
+  625  ls /usr/include/ | grep xml
+  626  ls /usr/lib64/ | grep xml
+  627  ls /usr/lib64/ | grep xslt
+  628  yum search xslt
+  629  cd tests/interactive
+  630  ls
+  631  less interactive.sub 
+  632  condor_submit -i interactive.sub 
+  633  ls
+  634  rm config install make make_error.err 
+  635  ls
+  636  exit
+  637  condor_q dwu43
+  638  condor_q dwu43 -nobatch
+  639  condor_q 80649597.1
+  640  condor_q 80649597.1 -nobatch
+  641  condor_q 80649597.1 -af UserLog
+  642  sudo less /home/dwu43/Log/39mod4_solu3_80649597.log
+  643  condor_q 80649597 -nobatch
+  644  exit
+  645  ls
+  646  cd tests/
+  647  ls
+  648  mkdir python_xml
+  649  cd python_xml/
+  650  ls
+  651  wget https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
+  652  md5sum Anaconda3-4.2.0-Linux-x86_64.sh 
+  653  md5sum Anaconda3-4.2.0-Linux-x86_64.sh | cut -f 1
+  654  echo 4692f716c82deb9fa6b59d78f9f6e85c
+  655  bash Anaconda3-4.2.0-Linux-x86_64.sh 
+  656  ls
+  657  ls anaconda3/
+  658  export PATH=$(pwd)/anaconda3/bin:$PATH
+  659  which python
+  660  python
+  661  cd ..
+  662  exit
+  663  condor_q zcohen3
+  664  condor_q zcohen3 -af RequestCpus RequestMemory RequestDisk
+  665  status_host 
+  666  status_host mem1
+  667  condor_q dwu43 -nobatch
+  668  condor_q 80649597 -nobatch
+  669  status_host mem2
+  670  cd tests/interactive
+  671  ls
+  672  condor_submit -i interactive.sub 
+  673  less interactive.sub 
+  674  sudo mkdir /mnt/gluster/rzheng27
+  675  sudo chown -R rzheng27:rzheng27 /mnt/gluster/rzheng27/
+  676  env
+  677  echo PATH
+  678  echo $PATH
+  679  nano script.sh
+  680  sudo -i
+  681  ls -lrt /home
+  682  condor_q zcohen3
+  683  condor_q zcohen3 -af RequestCpus RequestMemory
+  684  status_host mem1
+  685  status_host wid-003
+  686  condor_q sgoldstein
+  687  condor_q -bet 81067307.0
+  688  sudo less /home/sgoldstein/Projects/Baobab/queue/submit/interactive.submit
+  689  condor_q zcohen3 -af RequestCpus RequestMemory
+  690  condor_q zcohen3
+  691  history > 2016_11_23.txt

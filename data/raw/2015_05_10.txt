@@ -1,0 +1,500 @@
+  304  clear
+  305  osg_connect 
+  306  ls
+  307  osg_connect 
+  308  clear
+  309  submit3
+  310  submit3
+  311  clear
+  312  submit3
+  313  submit3
+  314  submit3
+  315  submit3
+  316  submit3
+  317  library
+  318  osg_connect 
+  319  submit5
+  320  submit3
+  321  submit3
+  322  cd Downloads/
+  323  ls
+  324  unzip uwmadison_index-no-top-nav.zip 
+  325  cd uwmadison_index-no-top-nav.zip 
+  326  ls
+  327  cd index-no-top-nav/
+  328  ls
+  329  cd css/
+  330  ls
+  331  less main_no_top_nav.css 
+  332  cp Pictures/CHTC-logo-vertical.png Code/chtc/dev_website/includes/
+  333  submit3
+  334  less Downloads/index-no-top-nav/css/main_no_top_nav.css 
+  335  cd Downloads/index-no-top-nav/
+  336  less css/main_no_top_nav.css 
+  337  less css/main_no_top_nav.css 
+  338  less css/main_no_top_nav.css 
+  339  submit3
+  340  submit3
+  341  submit3
+  342  hpc
+  343  clear
+  344  osg_connect 
+  345  submit3
+  346  ssh ckoch5@submit-1.chtc.wisc.edu
+  347  osg_connect 
+  348  clear
+  349  submit3
+  350  hpc
+  351  submit5
+  352  clear
+  353  ls
+  354  submit5
+  355  submit5
+  356  submit5
+  357  submit5
+  358  clear
+  359  submit3
+  360  submit5
+  361  submit3
+  362  submit3
+  363  clear
+  364  submit3
+  365  ssh ckoch5@submit-5.chtc.wisc.edu
+  366  clear
+  367  ssh ckoch5@submit-4.chtc.wisc.edu
+  368  submit3
+  369  submit3
+  370  submit3
+  371  clear
+  372  hpc 
+  373  clear
+  374  library 
+  375  submit5 
+  376  submit5
+  377  submit5
+  378  submit3
+  379  submit3
+  380  submit5
+  381  clear
+  382  submit3
+  383  clear
+  384  submit5
+  385  submit3
+  386  library
+  387  osg_connect 
+  388  hpc
+  389  library 
+  390  ssh ckoch5@submit-2.chtc.wisc.edu
+  391  submit5
+  392  submit3 
+  393  ssh ckoch5@aci-service-1.chtc.wisc.edu
+  394  clear
+  395  hpc
+  396  library
+  397  submit3
+  398  submit5
+  399  ssh ckoch5@deepdivesubmit.chtc.wisc.edu
+  400  clear
+  401  ls
+  402  submit3
+  403  submit5
+  404  submit3
+  405  cd
+  406  ls
+  407  cd Downloads/
+  408  ls
+  409  tar xzf condor-V8_3_5-Manual.tar.gz 
+  410  ls
+  411  cd condor-V8_3_5-Manual
+  412  ls
+  413  grep "abnormal termination" ./*
+  414  cd
+  415  cd
+  416  ls
+  417  cd Downloads/
+  418  ls
+  419  cd condor-V8_3_5-Manual
+  420  grep "encrypt" ./*
+  421  clear
+  422  ssh submit-5.chtc.wisc.edu
+  423  ssh linares2@submit-5.chtc.wisc.edu
+  424  cd
+  425  cd Downloads/
+  426  ls
+  427  cd condor-V8_3_5-Manual
+  428  ls
+  429  grep -i "signal" ./*
+  430  clear
+  431  cd
+  432  ssh ckoch5@submit-4.chtc.wisc.edu
+  433  library 
+  434  submit3
+  435  submit4
+  436  submit3
+  437  ssh ckoch5@submit-3.chtc.wisc.edu
+  438  ssh ckoch5@submit-2.chtc.wisc.edu
+  439  submit5
+  440  submit5
+  441  library
+  442  submit3
+  443  clear
+  444  submit5
+  445  cd Code/XD_numbers/
+  446  ipython notebook
+  447  submit5
+  448  ssh ckoch5@submit-2.chtc.wisc.edu
+  449  ssh ckoch5@submit-2.chtc.wisc.edu
+  450  submit5
+  451  ssh ckoch5@submit-2.chtc.wisc.edu
+  452  ssh ckoch5@submit-2.chtc.wisc.edu
+  453  cd
+  454  clear
+  455  submit5
+  456  clear
+  457  submit3
+  458  submit5
+  459  submit5
+  460  submit3
+  461  clear
+  462  hpc
+  463  clear
+  464  hpc
+  465  submit5
+  466  submit5
+  467  submit5
+  468  clear
+  469  submit5
+  470  submit5
+  471  ssh ckoch5@submit-2.chtc.wisc.edu
+  472  submit5
+  473  clear
+  474  submit5
+  475  submit3
+  476  submit5
+  477  submit3
+  478  clear
+  479  ssh ckoch5@submit-1.chtc.wisc.edu
+  480  library
+  481  submit3
+  482  submit4
+  483  submit5
+  484  clear
+  485  hpc 
+  486  library
+  487  clear
+  488  submit3
+  489  clear
+  490  submit5
+  491  submit5
+  492  clear
+  493  pwd
+  494  ssh ckoch5@submit-5.chtc.wisc.edu
+  495  scp Downloads/condor-V8_3_5-Manual.tar.gz ckoch5@submit-5.chtc.wisc.edu:/home/ckoch5
+  496  ssh ckoch5@submit-5.chtc.wisc.edu
+  497  submit5
+  498  submit5
+  499  clear
+  500  library
+  501  ls
+  502  nano combine_sheets.py 
+  503  rm madison_*04-01*.csv
+  504  ls
+  505  nano make_table.sh 
+  506  ./make_table.sh *PI*04-01*04-30*.csv
+  507  ls
+  508  less madison_PI_2015-04-01_to_2015-04-30_aggregate.csv 
+  509  la
+  510  la
+  511  ls
+  512  clear
+  513  ls
+  514  git status
+  515  git add plotting.R
+  516  git add combine_sheets.*
+  517  git add make_table.sh 
+  518  git commit -m "adding scripts"
+  519  git push me master
+  520  ls
+  521  cat *Job_Size__Max*
+  522  ls
+  523  cat *CPU_Hours*
+  524  git status
+  525  git add plotting.R 
+  526  git commit -m "visualization works"
+  527  git push me master
+  528  rm madison_*
+  529  ls
+  530  mkdir data
+  531  mkdir scripts
+  532  ls
+  533  mv plotting.R combine_sheets.py make_table.sh scripts/
+  534  mv *.csv data/
+  535  ls
+  536  mkdir misc
+  537  mv *.ipynb misc/
+  538  ls
+  539  git status
+  540  nano .gitignore 
+  541  nano .gitignore 
+  542  git status
+  543  git add -A
+  544  git commit -m "reorganizing"
+  545  git push me master
+  546  cd data/
+  547  ls
+  548  ../scripts/make_table.sh *PI*04-01*04-30*
+  549  ls
+  550  rm madison_*
+  551  ls
+  552  cd ../scripts/
+  553  nano combine_sheets.py 
+  554  nano make_table.sh 
+  555  cd ../data/
+  556  ls
+  557  ../scripts/make_table.sh *PI*04-01*.csv
+  558  ls
+  559  less madison_PI_2015-04-01_to_2015-04-30_aggregate.csv 
+  560  R CMD ../scripts/plotting.R 
+  561  ls
+  562  cd ../scripts/
+  563  ls -l
+  564  chmod +x plotting.R combine_sheets.py 
+  565  ls
+  566  ls -l
+  567  cd ../data/
+  568  R CMD ../scripts/plotting.R 
+  569  cd ../scripts/
+  570  nano plotting.R 
+  571  which R
+  572  R CMD BATCH ../scripts/plotting.R 
+  573  ls
+  574  rm plotting.Rout 
+  575  cd ../data/
+  576  ls
+  577  R CMD BATCH ../scripts/plotting.R 
+  578  ls
+  579  cd
+  580  clear
+  581  cd Code/XD_numbers/
+  582  ls
+  583  mkdir reports
+  584  ls data/
+  585  mv data/madison_PI_2015-04-01_to_2015-04-30_aggregate* reports/
+  586  ls
+  587  cd scripts/
+  588  nano make_table.sh 
+  589  nano combine_sheets.py 
+  590  nano plotting.R 
+  591  cd ..
+  592  ls
+  593  mv old_data/* misc/
+  594  rmdir old_data/
+  595  ls
+  596  git status
+  597  nano .gitignore 
+  598  git status
+  599  git add -A
+  600  git commit -m "reorganizing again"
+  601  git push me master
+  602  ls
+  603  mv ~/Downloads/*aggregate.csv data/
+  604  cd data/
+  605  ls
+  606  ../scripts/make_table.sh *PI*2015-01*
+  607  nano ../scripts/combine_sheets.py 
+  608  ls
+  609  ../scripts/make_table.sh *PI*2015-01*
+  610  ls
+  611  cd ../reports/
+  612  ls
+  613  cd ../scripts/
+  614  nano plotting.R 
+  615  cd ../reports/
+  616  nano ../scripts/plotting.R 
+  617  R CMD BATCH ../scripts/plotting.R 
+  618  ls
+  619  cd ..
+  620  git status
+  621  git add -A
+  622  git commit -m "adding year to date data"
+  623  git push me master
+  624  clear
+  625  cd ~/SWC/
+  626  ls
+  627  cd shell-novice/
+  628  git remote -v
+  629  cd ../ck-shell/
+  630  git remote -v
+  631  cd ../shell-novice/
+  632  ls
+  633  git remote -v
+  634  git pull origin gh-pages
+  635  clear
+  636  git remote add ocefpaf https://github.com/ocefpaf/shell-novice
+  637  git fetch ocefpaf
+  638  git branch -a
+  639  git checkout -b home_callout ocefpaf/home_callout
+  640  git checkout gh-pages
+  641  git merge home_callout
+  642  nano 01-filedir.md 
+  643  git status
+  644  git add 01-filedir.md 
+  645  git commit -m "merging ocefpafs addition"
+  646  git remote -v
+  647  git branch -v
+  648  git push origin gh-pages
+  649  git remote rm ocefpaf
+  650  git remote -v
+  651  git branch -D home_callout
+  652  ls
+  653  git branch
+  654  git remote -v
+  655  git push christinalk gh-pages
+  656  cd
+  657  cd SWC/shell-novice/
+  658  ls
+  659  make
+  660  make check
+  661  make preview
+  662  git status
+  663  git branch update_html
+  664  git checkout update_html
+  665  git status
+  666  git add -A
+  667  make
+  668  make preview
+  669  git reset
+  670  git checkout gh-pages
+  671  git status
+  672  git add -A
+  673  git commit -m "updating html, May 2"
+  674  git remote -v
+  675  git push origin gh-pages
+  676  cd ~/Code/XD_numbers/
+  677  ls
+  678  cd scripts/
+  679  nano combine_sheets.py 
+  680  cd 
+  681  scp ckoch5@library.cs.wisc.edu:/p/condor/public/chtc/matlab-jobs.shtml .
+  682  ls
+  683  scp ckoch5@submit-5.chtc.wisc.edu:/home/ckoch5/interactive.submit
+  684  scp ckoch5@submit-5.chtc.wisc.edu:/home/ckoch5/interactive.submit ./
+  685  cd Documents/training/
+  686  ls
+  687  cd loops/
+  688  ls
+  689  cd ..
+  690  ls
+  691  nano print_msg.sh
+  692  chmod +x print_msg.sh 
+  693  ./print_msg.sh 5
+  694  for num in {1..5}; do ./print_msg $num; done
+  695  for num in {1..5}; do print_msg $num; done
+  696  ls
+  697  for num in {1..5}; do ./print_msg.sh $num; done
+  698  ls
+  699  pdflatex htc.tex 
+  700  echo $PATH
+  701  ls /usr/local/texlive/2014
+  702  ls /usr/local/texlive/2014
+  703  /usr/local/texlive/2014/install-tl 
+  704  sudo /usr/local/texlive/2014/install-tl 
+  705  ls
+  706  echo $PATH
+  707  which pdflatex
+  708  which pdflatex
+  709  nano print_msg.sh 
+  710  ls
+  711  scp print_msg.sh ckoch5@submit-5.chtc.wisc.edu:/home/ckoch5/training
+  712  ls
+  713  pdflatex htc.tex 
+  714  ls /usr/local/texlive/2014/bin/
+  715  ls /usr/local/texlive/2014/bin/x86_64-darwin/
+  716  echo $PATH
+  717  PATH=/usr/local/texlive/2014/bin/x86_64-darwin:$PATH
+  718  pdflatex htc.tex 
+  719  ls
+  720  xelatex htc.tex 
+  721  ls
+  722  clear
+  723  ls
+  724  cd ~/Documents/engagement_reports/
+  725  scp notes.md ckoch5@submit-5.chtc.wisc.edu:/home/ckoch5/training
+  726  cd
+  727  cd Documents/
+  728  ls
+  729  mv training/ training_drafts/
+  730  ls
+  731  git clone https://github.com/ChristinaLK/htc-intro
+  732  cd htc-intro/
+  733  ls
+  734  git rm cowsay-3.03.tar.gz 
+  735  git status
+  736  ls
+  737  git reset
+  738  git rm history.txt 
+  739  git status
+  740  git checkout HEAD cowsay-3.03.tar.gz
+  741  ls
+  742  git status
+  743  touch LICENSE.md
+  744  git status
+  745  git add LICENSE.md 
+  746  git commit -m "deleting history file and adding blank license"
+  747  cd ..
+  748  cd training_drafts/
+  749  ls
+  750  cp ~/Downloads/jp2a-1.0.6.tar.gz .
+  751  ls
+  752  tar xzf jp2a-1.0.6.tar.gz 
+  753  ls
+  754  cd jp2a-1.0.6
+  755  ls
+  756  less install-sh 
+  757  ./install-sh 
+  758  less README 
+  759  ./configure 
+  760  clear
+  761  ls
+  762  ./install-sh 
+  763  ./install-sh ./
+  764  ./configure 
+  765  ls /usr/local/lib/
+  766  cd ..
+  767  ls
+  768  cd ../training_drafts/
+  769  cd ..
+  770  ls
+  771  cd htc-intro/
+  772  ls
+  773  cp cowsay-3.03.tar.gz ../training_drafts/
+  774  ls
+  775  cd ../training_drafts/
+  776  ls
+  777  echo $PATH
+  778  tar xzf cowsay-3.03.tar.gz 
+  779  ls
+  780  cd cowsay-3.03
+  781  ls
+  782  ./install.sh ./
+  783  ls
+  784  ls cows
+  785  bin/cowsay -f cows/sheep.cow "In MSP"
+  786  bin/cowsay -f cows/skeleton.cow "In MSP"
+  787  bin/cowsay -f cows/sodomized.cow "In MSP"
+  788  bin/cowsay -f cows/turkey.cow "In MSP"
+  789  bin/cowsay -f cows/stegosaurus.cow "In MSP"
+  790  for file in cows/*.cow; do echo $file >> ../cow_dictionary.txt; bin/cowsay -f $file "Hi there" >> ../cow_dictionary.txt; done
+  791  cd ..
+  792  ls
+  793  less cow_dictionary.txt 
+  794  cd ..
+  795  ls
+  796  cd ~/Code/
+  797  ls
+  798  cd history_analysis/
+  799  ls
+  800  ls -l
+  801  less history_dump
+  802  less history_dump.txt 
+  803  history > 2015_05_10.txt

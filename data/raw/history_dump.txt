@@ -1,0 +1,500 @@
+  219  ssh ckoch5@submit-3.chtc.wisc.edu
+  220  ssh ckoch5@library.cs.wisc.edu
+  221  ssh ckoch5@submit-3.chtc.wisc.edu
+  222  ls
+  223  ssh ckoch5@library.cs.wisc.edu
+  224  clear
+  225  ssh ckoch5@submit-3.chtc.wisc.edu
+  226  clear
+  227  ls
+  228  cd Downloads/
+  229  ls
+  230  less process.log 
+  231  less HTC_TestScript.R 
+  232  ls
+  233  less ChtcWrapper1.out 
+  234  clear
+  235  ssh ckoch5@submit-3.chtc.wisc.edu
+  236  ls
+  237  less HTC_TestScript.R 
+  238  ssh ckoch5@submit-3.chtc.wisc.edu
+  239  less HTC_TestScript.R 
+  240  ls
+  241  less ChtcWrapper1.out 
+  242  less ChtcWrapper1.out 
+  243  less HTC_TestScript.R 
+  244  ssh ckoch5@submit-3.chtc.wisc.edu
+  245  less HTC_TestScript.R 
+  246  less ChtcWrapper1.out 
+  247  ssh ckoch5@submit-3.chtc.wisc.edu
+  248  clear
+  249  ssh ckoch5@submit-3.chtc.wisc.edu
+  250  clear
+  251  ls
+  252  cd ..
+  253  ls
+  254  cd Code/
+  255  ls
+  256  less hello_world.sh 
+  257  nano hello_name.sh
+  258  ls
+  259  cp hello_world.sh greeting.sh
+  260  nano greeting.sh 
+  261  nano in.txt
+  262  ls
+  263  chmod +x hello_world.sh 
+  264  ls
+  265  chmod +x greeting.sh 
+  266  greeting
+  267  bash greeting.sh 
+  268  ls
+  269  less out.txt 
+  270  nano greeting.sh 
+  271  bash greeting.sh 
+  272  less out.txt 
+  273  rm out.txt 
+  274  ls
+  275  bash greeting.sh 
+  276  less out.txt 
+  277  rm out.txt 
+  278  nano greeting.sh 
+  279  nano gre
+  280  nano greeting.sh 
+  281  ssh ckoch5@submit-3.chtc.wisc.edu
+  282  clear
+  283  ssh ckoch5@submit-3.chtc.wisc.edu
+  284  clear
+  285  ssh ckoch5@submit-3.chtc.wisc.edu
+  286  exit
+  287  ssh ckoch5@submit-3.chtc.wisc.edu
+  288  clear
+  289  ssh ckoch5@submit-3.chtc.wisc.edu
+  290  ssh ckoch5@submit-1.chtc.wisc.edu
+  291  ssh ckoch5@submit-3.chtc.wisc.edu
+  292  clear
+  293  ssh ckoch5@submit-3.chtc.wisc.edu
+  294  clear
+  295  cd Downloads/
+  296  ls
+  297  unzip mydag.dag.zip 
+  298  ls
+  299  less mydag.dag
+  300  wc -l mydag.dag
+  301  tail mydag.dag
+  302  grep 81out | wc
+  303  wc -l mydag.dag
+  304  less mydag.dag
+  305  grep *81out* | wc -l
+  306  ls
+  307  clear
+  308  ls
+  309  cd
+  310  ls
+  311  clear
+  312  ls
+  313  ls Downloads/
+  314  cd Downloads/
+  315  rm HTC_TestScript.R 
+  316  rm mydag.dag*
+  317  ls
+  318  rm ChtcWrapper1.out 
+  319  rm *.dmg
+  320  ls
+  321  rm process.log 
+  322  rm get-pip.py 
+  323  ls
+  324  cd
+  325  clear
+  326  ls
+  327  clear
+  328  ls -l
+  329  ssh ckoch5@submit-3.chtc.wisc.edu
+  330  top
+  331  ssh ckoch5@submit-3.chtc.wisc.edu
+  332  cd Downloads/
+  333  ls
+  334  mv ganglia-metrics.csv ../Documents/
+  335  ls
+  336  mv ganglia_month_CPU.csv ../Documents/
+  337  cd ..
+  338  ls
+  339  cd Downloads/
+  340  cd ../Documents/
+  341  ls
+  342  mv ganglia* data_analysis/
+  343  cd data_analysis/
+  344  ls
+  345  less ganglia-metrics.csv 
+  346  less ganglia_month_CPU.csv 
+  347  clear
+  348  cd ../../Desktop/
+  349  ls
+  350  cd UCBoulder_2014/
+  351  ls
+  352  git branch -v
+  353  git remote -v
+  354  git pull me gh-pages
+  355  git checkout master
+  356  git pull me master
+  357  git checkout gh-pages
+  358  git status
+  359  git add index.html 
+  360  git commit -m "adding links to website"
+  361  git push me gh-pages
+  362  git checkout master
+  363  nano README.md 
+  364  git commit README.md -m "quick schedule update"
+  365  git remote -v
+  366  git push me master
+  367  ls
+  368  nano README.md 
+  369  git commit README.md -m "quick schedule update"
+  370  git push me master
+  371  less README.md 
+  372  nano README.md 
+  373  git commit README.md -m "last schedule update"
+  374  git push me master
+  375  python --version
+  376  git --version
+  377  git --version
+  378  nano
+  379  nano --version
+  380  which ls
+  381  which --version
+  382  echo $PATH
+  383  R --version
+  384  clear
+  385  ssh ckoch5@submit-3.chtc.wisc.edu
+  386  ssh ckoch5@aci-service-1.chtc.wisc.edu
+  387  ssh ckoch5@submit-3.chtc.wisc.edu
+  388  clear
+  389  ssh ckoch5@submit-3.chtc.wisc.edu
+  390  clear
+  391  cd Downloads/
+  392  ls
+  393  rm 'BestPractices (1).pdf;
+  394  rm 'BestPractices (1).pdf'
+  395  ls
+  396  cd ../Documents/
+  397  ls
+  398  ls -a ../Desktop/UWMad_2014/
+  399  ls
+  400  ls 2014-08-25-wisc/
+  401  ls
+  402  ls official_things/
+  403  mv Confirmation_\ Fidelity\ NetBenefits.pdf official_things/
+  404  ls
+  405  ls official_things/
+  406  cd ..
+  407  cd Documents/official_things/
+  408  mv earning_statement.PDF earning_statement_1412.PDF 
+  409  ls
+  410  mv ../../Downloads/earning_statement.PDF earning_statement_1501.PDF 
+  411  ls
+  412  cd ..
+  413  ls
+  414  less leq
+  415  less lequieu.txt 
+  416  mv lequieu.txt engagement_reports/
+  417  ls
+  418  ssh ckoch5@library.cs.wisc.edu
+  419  ssh ckoch5@submit-5.chtc.wisc.edu
+  420  ls
+  421  clear
+  422  ssh ckoch5@submit-5.chtc.wisc.edu
+  423  ssh ckoch5@submit-3.chtc.wisc.edu
+  424  ssh ckoch5@submit-4.chtc.wisc.edu
+  425  ls
+  426  clear
+  427  ssh ckoch5@submit-5.chtc.wisc.edu
+  428  clear
+  429  ls
+  430  ssh ckoch5@library.cs.wisc.edu
+  431  clear
+  432  ssh ckoch5@submit-4.chtc.wisc.edu
+  433  ssh ckoch5@submit-4.chtc.wisc.edu
+  434  clear
+  435  ssh ckoch5@submit-4.chtc.wisc.edu
+  436  ssh ckoch5@submit-4.chtc.wisc.edu
+  437  ssh ckoch5@submit-5.chtc.wisc.edu
+  438  ls
+  439  cd Do
+  440  cd Documents/
+  441  ls
+  442  mkdir templates
+  443  mv 72-hour_followup.txt templates/
+  444  ls
+  445  ssh ckoch5@submit-5.chtc.wisc.edu
+  446  clear
+  447  ssh ckoch5@aci-service-1.chtc.wisc.edu
+  448  clear
+  449  ls
+  450  ls
+  451  ls Downloads/
+  452  ls Documents/
+  453  ls -l Documents/
+  454  ls -l -d Documents/
+  455  ls -l Documents/
+  456  mv Documents/office_hours_sign.docx Documents/templates/
+  457  ls
+  458  ls -l Documents/
+  459  rm Documents/data_files.tar.gz 
+  460  ls -l Documents/
+  461  ssh ckoch5@submit-4.chtc.wisc.edu
+  462  ssh ckoch5@submit-3.chtc.wisc.edu
+  463  ls
+  464  cd Documents/
+  465  ls
+  466  mkdir users
+  467  ls
+  468  cd users/
+  469  ls
+  470  echo "Sathya,Ganta,sganta,ECE,Hagness,C,C,C,IP,F" > users.csv
+  471  less users.csv 
+  472  echo "first,last,netid,dept,PI,contact,meeting,follow-up_email,userapp_notes,other,comments > users.csv
+  473  echo "first,last,netid,dept,PI,contact,meeting,follow-up_email,userapp_notes,other,comments" > users.csv
+  474  less users.csv 
+  475  ls -g
+  476  ls -G
+  477  cd ..
+  478  ls
+  479  ls -G
+  480  ls -Gl
+  481  clear
+  482  ls
+  483  cd ..
+  484  ls -G
+  485  ls
+  486  ls -a
+  487  less .bashrc 
+  488  rm .bashrc 
+  489  ls
+  490  touch .bash_profile
+  491  nano .bash_profile 
+  492  ls
+  493  exit
+  494  ls
+  495  ls Do
+  496  ls Documents/
+  497  nano .bash_profile 
+  498  ls
+  499  less bashrc.sh 
+  500  nano .bash_profile 
+  501  ls
+  502  rm bashrc.sh 
+  503  ls
+  504  ls -ah
+  505  ls -lah
+  506  ssh ckoch5@submit-3.chtc.wisc.edu
+  507  clear
+  508  git clone -b 2014-08-25 https://github.com/UW-Madison-ACI/boot-camps.git testing_for_tomorrow
+  509  echo Hello, World
+  510  pwd
+  511  ls
+  512  whoami
+  513  touch testfile
+  514  ls
+  515  ls -F
+  516  ls -l
+  517  rm testfile 
+  518  cd testing_for_tomorrow/
+  519  ls
+  520  cd shell/
+  521  ls
+  522  cd
+  523  cd testing_for_tomorrow/shell/
+  524  ls
+  525  man ls
+  526  ls -ltr
+  527  cd
+  528  ls testing_for_tomorrow/
+  529  ls testing_for_tomorrow/shell/
+  530  cd testing_for_tomorrow/shell/
+  531  cd
+  532  pwd
+  533  ls /Users/ckoch/Documents/engagement_reports/
+  534  cd testing_for_tomorrow/shell/
+  535  ls ~
+  536  ls ..
+  537  ls ../..
+  538  cd data/THOMAS/
+  539  ls
+  540  ls *
+  541  ls *1
+  542  ls 04**
+  543  ls 04*
+  544  ls *4*1
+  545  ls /bin/*a*b*
+  546  ls /bin/
+  547  ls /bin/*a*
+  548  ls /bin/*b*
+  549  ls /bin/*b* /bin/*a*
+  550  ls /bin/*b*a* /bin/*a*b*
+  551  history
+  552  ! 549
+  553  ls /bin/*b* /bin/*a*
+  554  which rm
+  555  echo $PATH
+  556  ls
+  557  cd ..
+  558  ls
+  559  cd ..
+  560  ls
+  561  hello
+  562  bash hello 
+  563  ./hello 
+  564  cat ex_data.txt 
+  565  cat ex_data.txt ex_data.txt 
+  566  cat hello 
+  567  cat dictionary.txt 
+  568  cat data/THOMAS/*
+  569  less dictionary.txt 
+  570  less dictionary.txt 
+  571  cd data/Bert/
+  572  ls
+  573  cat au*
+  574  cat au* > ../all_data
+  575  ls ..
+  576  cat ../gerdal/*4* >> ../all_data 
+  577  cd .
+  578  cd ..
+  579  cp all_data all_data_backup
+  580  mkdir backup
+  581  mv all_data_backup backup/
+  582  mv all_data all_data_IMPORTANT
+  583  ls
+  584  rm backup/all_data_backup 
+  585  mv all_data_IMPORTANT all_data
+  586  mkdir foo
+  587  cp all_data foo/
+  588  ls
+  589  ls foo/
+  590  rm -r foo/
+  591  cd ..
+  592  ls
+  593  find . -print
+  594  find . -type f -print
+  595  find . -type f -name "*1*"
+  596  find . -maxdepth 1 -type f -print
+  597  find . -maxdepth 2 -type f -print
+  598  find . -tyle f -name "*1*" -print -o -name "*2*" -print
+  599  find . -type f -name "*1*" -print -o -name "*2*" -print
+  600  find . -type f -exec grep Volume {} \;
+  601  find . -type f -print | xargs grep Volume
+  602  cd data/
+  603  ls
+  604   mkdir cleaned_data
+  605  find -type f -print
+  606  find . -type f -print
+  607  find . -type f -print | cp cleaned_data/
+  608  find . -type f -print | xargs cp cleaned_data/
+  609  cp ./*/* cleaned_data/
+  610  ls cleaned_data/
+  611  rm cleaned_data/*NOTES*
+  612  ls cleaned_data/
+  613  mv cleaned_data/* cleaned_data/*.txt
+  614  find cleaned_data/ -type f -exec mv {} {}.txt \;
+  615  ls cleaned_data/
+  616  cd Bert/
+  617  grep Range *
+  618  cd ..
+  619  grep Subject THOMAS/ jamesm/
+  620  grep Subject THOMAS/* jamesm/*
+  621  wc Bert/* gerdal/*4*
+  622  wc all_data 
+  623  ls -l all_data 
+  624  head ../dictionary.txt 
+  625  tail ../dictionary.txt 
+  626  head -n 1 all_data 
+  627  tail -n 1 all_data 
+  628  wc Bert/* gerdal/*4* | tail -n 1
+  629  cd ..
+  630  ls
+  631  nano toBeSorted
+  632  sort toBeSorted 
+  633  echo Christina >> toBeSorted 
+  634  sort toBeSorted >> Sorted
+  635  less Sorted 
+  636  cd data/
+  637  wc Bert/* | sort -k 3 -n
+  638  wc Bert/* | sort -k 3 -n -r
+  639  nano smallest
+  640  cd Bert/
+  641  ../smallest
+  642  chmod a+x ../smallest 
+  643  ../smallest 
+  644  ls -l ../smallest 
+  645  grep Range * | sort -n | head -1
+  646  grep Range * | sort -n -k 2| head -1
+  647  echo "grep Range * | sort -n -k 2| head -1"
+  648  echo "grep Range * | sort -n -k 2| head -1" > ../smallestrange
+  649  cd ..
+  650  history
+  651  chmod a+x smallestrange 
+  652  cd Bert/
+  653  ../smallestrange 
+  654  set
+  655  set | less
+  656  cd $HOME 
+  657  DATADIR="$HOME/testing_for_tomorrow/shell/data"
+  658  cd $DATADIR
+  659  pwd
+  660  mkdir $DATADIR/$USER
+  661  ls
+  662  cd
+  663  ls
+  664  ls -lah
+  665  less .bash_profile 
+  666  ls
+  667  git clone -b 2015-01-13 https://github.com/UW-Madison-ACI/boot-camps.git
+  668  cd boot-camps/
+  669  ls
+  670  cd shell/
+  671  ls
+  672  ls -F
+  673  ls -ltr
+  674  man ls
+  675  ls -lt
+  676  ls -lr
+  677  cd
+  678  ls -lt
+  679  ls -ltr
+  680  ls -r
+  681  ls -lr
+  682  ls
+  683  ls -l
+  684  man ls
+  685  ls -S
+  686  ls -lS
+  687  cd boot-camps/
+  688  ls
+  689  git branch adding-manpage-link
+  690  git checkout adding-manpage-link
+  691  ls
+  692  cd shell/
+  693  ls
+  694  nano Readme.md 
+  695  git status
+  696  git add Readme
+  697  git add Readme.md 
+  698  git commit -m "changing man pages link"
+  699  git remote -v
+  700  git remote add christina https://github.com/ChristinaLK/boot-camps
+  701  git branch -v
+  702  git push christina adding-manpage-link
+  703  git checkout 2015-01-13
+  704  ls
+  705  ls -l
+  706  ls
+  707  ls -l
+  708  ls -lF
+  709  ./hello 
+  710  history
+  711  clear
+  712  history | tail
+  713  ls -a ~
+  714  less ~/.bash_history 
+  715  clear
+  716  cat dictionary.txt 
+  717  cat data/THOMAS/*
+  718  history > ~/Documents/data_analysis/history_dump.txt
