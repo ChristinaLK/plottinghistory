@@ -1,35 +1,76 @@
 ---
-title: "History"
+title: "Shell Command History"
 author: "Christina Koch"
 date: "`r Sys.Date()`"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+knitr::opts_chunk$set(echo = FALSE)
 
-```{r history_data, inclue=FALSE, message=FALSE}
 library(dplyr)
 library(ggplot2)
 library(knitr)
-date <- '2016_11_23'
-filename <- paste0('/Users/ckoch/Code/history_analysis/',date,'.csv')
-history_data <- read.table(file = filename, header = FALSE, sep = ",")
+library(tools)
+
+filename <- '../data/csv/2018-04-27.history.csv'
+use_cutoff <- 2
+top_10 <- FALSE
 ```
 
-```{r history_plot}
-history_plot <- history_data %>% 
+```{r history_data}
+# read in history data and save variables
+history_data <- read.table(file = filename,
+                       header = FALSE, sep = ",")
+
+tallies <- history_data %>%
   group_by(V1) %>%
-  summarize(total_uses = n()) %>% 
-  mutate(V1 = reorder(V1, total_uses)) %>% 
-  ggplot(aes(x = total_uses, y = V1)) + 
-  geom_point() + 
-  labs(x="Frequency", y="Command", title="Command Usage on submit-3")
+  tally() %>%
+  mutate(V1 = reorder(V1, n)) %>%
+  arrange(desc(n))
+most_used <- max(tallies$n)
+rows <- nrow(history_data)
+num_commands <- length(levels(history_data$V1))
+
+```
+
+## Top 10 Used Commands
+
+```{r history_top10}
+#make top_10 table here
+tallies %>% head(10) %>% select(V1) %>% arrange() %>% kable()
+```
+
+## Plot of Command Use
+
+```{r history_plot}
+if (use_cutoff) {cutoff <- use_cutoff } else {cutoff <- 0}
+if (top_10) {head_num <- 10} else {head_num <- num_commands}
+
+if (use_cutoff) {
+  plot_title <- paste("Shell Commands with More Than",
+  cutoff, "Uses", "(out of",rows,")")
+} else if (top_10) {
+  plot_title <- paste("Top 10 Shell Commands (out of",rows,")")
+} else {
+  plot_title <- paste("Shell Command Use (out of",rows,")")
+}
+plot_height <- round(num_commands / 8)
+
+history_plot <- tallies %>%
+  head(head_num) %>%
+  filter(n >= cutoff) %>%
+  ggplot(aes(x = n, y = V1)) +
+   geom_point() +
+   ggtitle(plot_title) +
+   xlab("Number of Uses") +
+   ylab("Command") +
+   theme_minimal()
 
 history_plot
 ```
 
-```{r history_list}
-levels(history_data$V1) %>% kable()
+## Command Frequency Distribution
+```{r history_distrib}
+tallies %>% select(n) %>% summary() %>% kable()
 ```
