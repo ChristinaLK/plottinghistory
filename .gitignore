@@ -5,3 +5,4 @@
 *.Rproj
 img/*.png
 report/*.html
+.ipynb_checkpoints
